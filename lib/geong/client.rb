@@ -2,6 +2,7 @@ require 'thrift'
 
 module Geong
   class Client
+    DEFAULT_HOST = '127.0.0.1'
     DEFAULT_PORT = 9090
 
     attr_reader :transport, :protocol
@@ -12,7 +13,7 @@ module Geong
     end
     
     def self.default_transport(options)
-      Thrift::FramedTransport.new(Thrift::Socket.new(options[:host], options[:port] || DEFAULT_PORT))
+      Thrift::FramedTransport.new(Thrift::Socket.new(options[:host] || DEFAULT_HOST, options[:port] || DEFAULT_PORT))
     end
     
     def self.default_protocol(transport, options)
