@@ -1,0 +1,6 @@
+#!/usr/bin/env ruby
+# Geong command line interface script.
+require 'geong'
+
+Geong::Server.start(ARGV)
+
