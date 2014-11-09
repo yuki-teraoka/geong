@@ -124,7 +124,7 @@ Please create a binding from below if you want to use other languages.
 
 ## Contributing
 
-1. Fork it ( https://github.com/[my-github-username]/geong/fork )
+1. Fork it ( https://github.com/yuki-teraoka/geong/fork )
 2. Create your feature branch (`git checkout -b my-new-feature`)
 3. Commit your changes (`git commit -am 'Add some feature'`)
 4. Push to the branch (`git push origin my-new-feature`)
