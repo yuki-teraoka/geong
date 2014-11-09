@@ -27,7 +27,7 @@ Or install it yourself as:
 ### Ruby Client
 
     require "geong"
-    client = Geong::Client.new("127.0.0.1")
+    client = Geong::Client.new(host: "127.0.0.1")
     client.open
     
     client.coordinates "toko-tower"
@@ -124,7 +124,7 @@ Please create a binding from below if you want to use other languages.
 
 ## Contributing
 
-1. Fork it ( https://github.com/yuki-teraoka/geong/fork )
+1. Fork it ( https://github.com/[my-github-username]/geong/fork )
 2. Create your feature branch (`git checkout -b my-new-feature`)
 3. Commit your changes (`git commit -am 'Add some feature'`)
 4. Push to the branch (`git push origin my-new-feature`)
