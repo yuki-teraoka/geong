@@ -1,8 +1,8 @@
 
 namespace rb Geong.Geocoder
-namespace java com.tera_works.geong.geocoder
-namespace php com.tera_works.geong.geocoder
-namespace py com_tera_works_geong_geocoder
+namespace java geong.geocoder
+namespace php geong.geocoder
+namespace py geong_geocoder
 namespace cpp Geong
 
 
