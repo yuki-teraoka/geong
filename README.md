@@ -41,7 +41,7 @@ Or install it yourself as:
 You can give the configuration script by using the -c option.
 If you want to know the other command line options, please see the "geong_server --help".
 
-    $ geong_server -p 19090 -c config.rb -d
+    $ geong_server -c config.rb -d
 
 ### Thrift Configuration
 

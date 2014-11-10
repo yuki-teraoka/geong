@@ -8,9 +8,7 @@ module Geong
     @@default_configuration = Configuration.new
     
     def self.start(argv)
-      params = ARGV.getopts('', "port:#{Geong::Server::Configuration::DEFAULT_PORT}", 'daemon', 'config:')
-      
-      @@default_configuration.port = params["port"] || DEFAULT_PORT
+      params = ARGV.getopts('','daemon', 'config:')
       
       config_filepath = params["config"] ? File.expand_path(params["config"]) : null
       
