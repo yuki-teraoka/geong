@@ -39,8 +39,9 @@ Or install it yourself as:
 ## Configure 
 
 You can give the configuration script by using the -c option.
+If you want to know the other command line options, please see the "geong_server --help".
 
-    $ geong_server -p 19090 -c config.rb
+    $ geong_server -p 19090 -c config.rb -d
 
 ### Thrift Configuration
 
@@ -49,14 +50,16 @@ Configuration DSL supported following methods.
 
    * logger(default: Logger.new(STDERR)) This option is available only if the default server.
    * port(default: 9090) This option is available only if the default transport.
-   * num_threads(default: 20) This option is available only if the default transport.
    * transport(default:  Thrift::ServerSocket)
    * transport_factory(default: Thrift::FramedTransportFactory)
    * protocol_factory(default: nil)
    * server(default: Thrift::NonblockingServer)
+   * num_threads(default: 20) This option is available only if the default server.
    * processor(readOnly) create geong processor
 
 ### Example. Using ThinHTTPServer 
+
+server
 
     # server(config.rb)
     require "thrift/server/thin_http_server"
@@ -65,6 +68,7 @@ Configuration DSL supported following methods.
       server Thrift::ThinHTTPServer.new(processor, {port: 8080})
     end
 
+client
 
     # client
     require "geong"
