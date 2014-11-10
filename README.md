@@ -30,8 +30,8 @@ Or install it yourself as:
     client = Geong::Client.new(host: "127.0.0.1")
     client.open
     
-    client.coordinates "toko-tower"
-     => <Geong::Geocoder::Location latitude:35.6585805, longitude:139.7454329>
+    client.coordinates("TokyoTower")
+    => <Geong::Geocoder::Location latitude:35.6585805, longitude:139.7454329>
     
     client.address("133.11.0.1")
      => "Tokyo, 13 , Japan"
