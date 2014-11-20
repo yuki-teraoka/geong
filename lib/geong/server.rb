@@ -10,7 +10,7 @@ module Geong
     def self.start(argv)
       params = ARGV.getopts('','daemon', 'config:')
       
-      config_filepath = params["config"] ? File.expand_path(params["config"]) : null
+      config_filepath = params["config"] ? File.expand_path(params["config"]) : nil
       
       if config_filepath
         @@default_configuration.logger.info "Load config file. #{config_filepath}"
